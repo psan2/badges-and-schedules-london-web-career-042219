@@ -30,13 +30,5 @@ end
 
 def printer(attendees)
   badges = batch_badge_creator(attendees)
-  rooms = assign_rooms(attendees)
-
-  attendees.each do |i|
-    i = 0
-    puts badges(i)
-    puts rooms(i)
-    i += 1
-    binding.pry
-  end
+  binding.pry
 end
