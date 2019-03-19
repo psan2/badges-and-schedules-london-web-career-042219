@@ -31,8 +31,8 @@ end
 def printer(attendees)
   badges = batch_badge_creator(attendees)
   rooms = assign_rooms(attendees)
-
-
-
-  binding.pry
+  badges.zip(rooms).each do |badge,room|
+    puts badge
+    puts room
+  end
 end
