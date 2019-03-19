@@ -30,7 +30,9 @@ end
 
 def printer(attendees)
   badges = batch_badge_creator(attendees)
-  badges.zip(assign_rooms(attendees))
+  rooms = assign_rooms(attendees)
+
+
 
   binding.pry
 end
